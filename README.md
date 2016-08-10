@@ -2,6 +2,12 @@
 
 A Docker image for running [web-component-tester](https://github.com/Polymer/web-component-tester) tests against [Google Polymer](https://github.com/Polymer/polymer) elements and applications in Firefox and Chrome with no GUI.
 
+## Pull
+
+```
+docker pull clapclapexcitement/wct
+```
+
 ## Building from the `Dockerfile`
 
 Building requires that you've installed and are running Docker.
