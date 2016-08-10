@@ -18,7 +18,7 @@ git clone https://github.com/PolymerElements/iron-ajax.git
 docker run -it \
   -v $(pwd)/iron-ajax:/usr/src/app \
   --security-opt seccomp:unconfined \
-  clapclapexcitement/mdb bash \
+  clapclapexcitement/wct bash \
   -c "/usr/bin/bower install && /usr/bin/xvfb-run wct --skip-selenium-install"
 ```
 
