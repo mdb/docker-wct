@@ -1,0 +1,16 @@
+services:
+  - docker
+
+install:
+  - docker build -t wct .
+
+before_script:
+  - git clone https://github.com/PolymerElements/iron-ajax.git
+
+script:
+  - docker run -v $(pwd)/iron-ajax:/usr/src/app --security-opt seccomp:unconfined -i -t wct bash -c "/usr/bin/bower install && /usr/bin/xvfb-run wct --skip-selenium-install"
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
