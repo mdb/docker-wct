@@ -1,4 +1,4 @@
-FROM nodesource/trusty:latest
+FROM nodesource/xenial:latest
 
 RUN apt-get update;
 
